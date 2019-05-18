@@ -7,23 +7,11 @@ const fs = require('fs')
 let listarCursos = () => {
 
     for (let i in cursos) {
-        let curso = cursos[i] 
-        setTimeout(() => {               
-        console.log(`El curso ${curso.id}-${curso.nombre} tiene una duración ${curso.duracion} y un valor de ${curso.valor} (COP) Pesos Colombianos`.green);
-        }, 2000 * i);
+        let curso = cursos[i]
+        setTimeout(() => {
+            console.log(`El curso ${curso.id}-${curso.nombre} tiene una duración ${curso.duracion} y un valor de ${curso.valor} (COP) Pesos Colombianos`.green);
+        }, 2000 * i+1);
     }
-}
-
-/*
-* Creación del archivo de prematricula
-* 
-*/
-let crearArchivo = (curso, argv) => {
-    registroPrematricula = `El estudiante ${argv.nombre} con cédula ${argv.identificacion} se ha matriculado en el curso ${curso.id} - ${curso.nombre} tiene una duración de ${curso.duracion} y un valor ${curso.valor}`;
-    fs.writeFile('prematricula.txt', registroPrematricula, (err) => {
-        if (err) throw (err)
-        console.log('Registro de Prematricula guardado'.blue);
-    })
 }
 
 /*
@@ -36,7 +24,11 @@ let prematricula = (curso, argv) => {
         listarCursos();
     }
     else {
-        crearArchivo(curso, argv)
+        registroPrematricula = `El estudiante ${argv.nombre} con cédula ${argv.identificacion} se ha matriculado en el curso ${curso.id} - ${curso.nombre} tiene una duración de ${curso.duracion} y un valor ${curso.valor}`;
+        fs.writeFile('prematricula.txt', registroPrematricula, (err) => {
+            if (err) throw (err)
+            console.log('Registro de Prematricula guardado'.blue);
+        })
     }
 }
 
