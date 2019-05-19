@@ -5,10 +5,12 @@ const opt = {
         alias: 'i'
     },
     identificacion: {
+        demand: true,
         alias: 'd',
         default: 10
     },
     nombre: {
+        demand: true,
         alias: 'n',
         default: 10
     }

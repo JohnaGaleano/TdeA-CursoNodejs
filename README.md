@@ -5,6 +5,7 @@ Tecnológico de Antioquia
 ## Instalar las dependencias del proyecto:
 
 cd TdeU-cursoNodejs/entrega1
+
 npm i
 
 
@@ -12,7 +13,7 @@ npm i
 
 # listar cursos
 node app.js
-# inscribirme en un curso
+# inscribir un curso
 node app.js prematricula
 
 ##ingresar el id del curso(i), nombre del interesado(-n) y cedula(-d)
