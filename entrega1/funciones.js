@@ -25,7 +25,8 @@ let prematricula = (curso, argv) => {
 //Sino se crea un archivo de texto "prematricula" con los datos del curso y el estudiante
     }
     else {
-        registroPrematricula = `El estudiante ${argv.nombre} con cédula ${argv.identificacion} se ha matriculado en el curso COD[${curso.id}]-${curso.nombre} tiene una duración de ${curso.duracion} meses y un valor ${curso.valor}`;
+        registroPrematricula = `El estudiante ${argv.nombre} con cédula ${argv.identificacion} se ha prematriculado en el curso:
+COD[${curso.id}]-${curso.nombre} que tiene una duración de ${curso.duracion} meses y un valor ${curso.valor}`;
         fs.writeFile(`prematricula-${argv.nombre}.txt`, registroPrematricula, (err) => {
             if (err) throw (err)
             console.log('Registro de Prematricula guardado'.blue);
