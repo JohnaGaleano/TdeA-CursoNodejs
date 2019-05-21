@@ -6,13 +6,11 @@ const opt = {
     },
     identificacion: {
         demand: true,
-        alias: 'd',
-        default: 10
+        alias: 'd'
     },
     nombre: {
         demand: true,
-        alias: 'n',
-        default: 10
+        alias: 'n'
     }
 }
 
