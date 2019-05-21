@@ -1,2 +1,2 @@
-El estudiante John con cédula 84649 se ha prematriculado en el curso:
+El estudiante John con cédula 54154 se ha prematriculado en el curso:
 COD[101]-nodejs que tiene una duración de 4 meses y un valor 260000
