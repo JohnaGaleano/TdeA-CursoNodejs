@@ -9,7 +9,7 @@ const { cursos } = require('./cursos')
 let comando = argv._[0]
 
 //Validación si el usuario esta interesado en premaricular
-if (comando == 'prematricula') {
+if (comando == 'inscribir') {
     //Busca el curso indicado por el usuario
     let curso = cursos.find(curso => curso.id == argv.id)
     //realiza el proceso de matricula

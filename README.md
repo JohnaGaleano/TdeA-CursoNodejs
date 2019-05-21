@@ -20,8 +20,8 @@ npm i
 # listar cursos
 node app.js
 # inscribir un curso
-node app.js prematricula
 
 ##ingresar el id del curso(i), nombre del interesado(-n) y cedula(-d)
+Ejemplo:
 
-node app.js prematricula -i=101 -n=John -d=84649
+node app.js inscribir -i=101 -n=John -d=84649

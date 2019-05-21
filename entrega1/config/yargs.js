@@ -17,7 +17,7 @@ const opt = {
 }
 
 const argv = require('yargs')
-    .command('prematricula', 'prematriculación en educacion continua', opt)
+    .command('inscribir', 'prematriculación en educacion continua', opt)
     .help()
     .argv
 
