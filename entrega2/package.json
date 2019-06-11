@@ -1,0 +1,20 @@
+{
+  "name": "entrega2",
+  "version": "1.0.0",
+  "description": "``` bash # archivo principal src/app.js ``` ### Instalar las dependencias del proyecto: ``` bash cd tdea-NodeJs/ npm install ```",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
